@@ -257,7 +257,10 @@ div.side-bar {
   padding: 12px 24px; }
   .page-wrap header {
     padding: 220px 16px;
-    text-align: center; }
+    text-align: center;
+    background-image: url(/assets/img/header.svg);
+    background-position: center;
+    background-repeat: no-repeat; }
     .page-wrap header h1 {
       font-size: 50px;
       font-weight: 700;
@@ -297,7 +300,9 @@ div.side-bar {
   .profile .avatar {
     height: 130px;
     width: 130px;
-    background: #ddd;
+    background-image: url(/assets/img/avatar.jpg);
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
     margin: 20px 10px;
     border-radius: 50%; }
 
