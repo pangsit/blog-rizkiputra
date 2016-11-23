@@ -231,7 +231,7 @@ th {
 div.side-bar {
   top: 0;
   bottom: 0;
-  width: 40%;
+  width: 35%;
   background-color: #F7941E;
   position: fixed;
   z-index: 1; }
@@ -253,7 +253,7 @@ div.side-bar {
       min-height: 100%; }
 
 .page-wrap {
-  margin-left: 40%;
+  margin-left: 35%;
   padding: 12px 24px; }
   .page-wrap header {
     padding: 220px 16px;
