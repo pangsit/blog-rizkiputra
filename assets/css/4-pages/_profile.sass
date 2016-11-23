@@ -1,9 +1,9 @@
 .profile
     height: cover
-    background: pink
     margin: 0 -24px
     margin-bottom: 24px
     padding: 24px
+    padding-top: 0
     
     h1
         font:
@@ -12,12 +12,24 @@
             family: Coming Soon
         color: #603A1E
         margin: 0
+        
+    .container
+        display: flex
+        
+        .avatar
+            +size(130px)
+            background:
+                image: url(/assets/img/avatar.jpg)
+                size: cover
+            -webkit-filter: grayscale(100%)
+            margin: 0 20px
+            border-radius: 50%
 
-    .avatar
-        +size(130px)
-        background:
-            image: url(/assets/img/avatar.jpg)
-            size: cover
-        -webkit-filter: grayscale(100%)
-        margin: 20px 10px
-        border-radius: 50%
+        .blurb
+            flex: 1
+            margin: 0
+            margin-right: 30px
+            
+            p
+                text-align: justify
+                margin: 5px 0

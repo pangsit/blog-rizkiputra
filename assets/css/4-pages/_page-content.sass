@@ -3,12 +3,8 @@
     padding: 12px 24px
     
     header
-        padding: 220px 16px
-        text-align: center
-        background:
-            image: url(/assets/img/header.svg) 
-            position: center
-            repeat: no-repeat
+        height: 600px
+        position: relative
         
         h1
             font:
@@ -16,17 +12,61 @@
                 weight: 700
                 family: Gloria
             color: #3C2415
+            text-align: center
             text-transform: uppercase
+            letter-spacing: 0.05em
             margin: 0
+            padding-top: 230px
         
         p
-            color: #8B5E3C
             font:
                 weight: 700
                 family: Coming Soon
             margin: 0
-            letter-spacing: 0.1em
+            text-align: center
+            font-weight: 700
+            letter-spacing: 0.2em
             
+        .header-1
+            position: absolute
+            top: 90px
+            left: -10px
+            +size(200px)
+            background:
+                image: url(/assets/img/header-1.svg)
+                repeat: no-repeat
+            max-width: 100%
+
+        .header-2
+            position: absolute
+            top: 50px
+            right: 30px
+            +size(200px)
+            background:
+                image: url(/assets/img/header-2.svg)
+                repeat: no-repeat
+            max-width: 100%
+
+        .header-3
+            position: absolute
+            bottom: 50px
+            right: 60px
+            +size(200px)
+            background:
+                image: url(/assets/img/header-3.svg)
+                repeat: no-repeat
+            max-width: 100%
+        
+        .header-4
+            position: absolute
+            bottom: 90px
+            left: 80px
+            +size(200px)
+            background:
+                image: url(/assets/img/header-4.svg)
+                repeat: no-repeat
+            max-width: 100%
+
             
             
     .story-section
@@ -40,6 +80,36 @@
                 family: Coming Soon
             color: #603A1E
             margin: 0
+            margin-bottom: 30px
+        
+        h2, h5
+            text-align: right
+            margin: 0
+            font-family: Coming Soon
+            
 
         p
             text-align: justify
+            margin: 30px 0 50px 0
+            text-indent: 50px
+            
+        .blog-pic
+            +size(100px)
+            width: 500px
+            background: #8B5E3C
+            margin: 0 auto
+
+@media (max-width: 1200px)
+    .page-wrap
+        header
+            .header-2
+                +size(150px)
+                top: 90px
+            
+            .header-3
+                +size(150px)
+                bottom: 90px
+
+            .header-4
+                +size(150px)
+            
