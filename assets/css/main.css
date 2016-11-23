@@ -16,6 +16,36 @@
   font-weight: 400;
   src: local("Fira Mono"), local("FiraMono"), url(http://fonts.gstatic.com/s/firamono/v3/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'Gloria';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gloria Hallelujah"), local("GloriaHallelujah"), url(https://fonts.gstatic.com/s/gloriahallelujah/v8/CA1k7SlXcY5kvI81M_R28cNDay8z-hHR7F16xrcXsJw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'Coming Soon';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Coming Soon"), local("ComingSoon"), url(https://fonts.gstatic.com/s/comingsoon/v6/myblyOycMnPMGjfPG-DzP44P5ICox8Kq3LLUNMylGO4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -23,7 +53,8 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  color: #8B5E3C; }
 
 article,
 aside,
@@ -225,17 +256,50 @@ div.side-bar {
   margin-left: 40%;
   padding: 12px 24px; }
   .page-wrap header {
-    padding: 270px 16px;
-    text-align: center;
-    background: #ddd; }
+    padding: 220px 16px;
+    text-align: center; }
     .page-wrap header h1 {
-      font-size: 72px;
+      font-size: 50px;
       font-weight: 700;
-      margin-bottom: 10px; }
+      font-family: Gloria;
+      color: #3C2415;
+      text-transform: uppercase;
+      margin: 0; }
+    .page-wrap header p {
+      color: #8B5E3C;
+      font-weight: 700;
+      font-family: Coming Soon;
+      margin: 0;
+      letter-spacing: 0.1em; }
   .page-wrap .story-section {
-    background: #ddd; }
+    font-family: Open Sans; }
+    .page-wrap .story-section h1 {
+      font-size: 40px;
+      font-weight: 900;
+      font-family: Coming Soon;
+      color: #603A1E;
+      margin: 0; }
     .page-wrap .story-section p {
       text-align: justify; }
+
+.profile {
+  height: cover;
+  background: pink;
+  margin: 0 -24px;
+  margin-bottom: 24px;
+  padding: 24px; }
+  .profile h1 {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Coming Soon;
+    color: #603A1E;
+    margin: 0; }
+  .profile .avatar {
+    height: 130px;
+    width: 130px;
+    background: #ddd;
+    margin: 20px 10px;
+    border-radius: 50%; }
 
 footer {
   height: 200px;
