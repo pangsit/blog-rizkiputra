@@ -366,7 +366,7 @@ div.side-bar {
     width: 150px; } }
 @media screen and (max-width: 500px) {
   .page-wrap {
-    margin: 0; }
+    margin: auto; }
     .page-wrap header {
       height: 450px; }
       .page-wrap header h1 {
@@ -380,7 +380,7 @@ div.side-bar {
         height: 80px;
         width: 80px;
         bottom: 50px;
-        right: 15px;
+        right: 0;
         -webkit-transform: rotate(50deg);
         -moz-transform: rotate(50deg);
         -ms-transform: rotate(50deg);
@@ -413,37 +413,38 @@ div.side-bar {
           max-width: 100%; }
     .page-wrap .story-section {
       display: none; } }
+@media screen and (max-width: 380px) {
+  .page-wrap header h1 {
+    padding-top: 30%; }
+  .page-wrap header .bg-container {
+    height: 150px;
+    width: 150px; }
+    .page-wrap header .bg-container .bg-img-mobile {
+      height: 150px;
+      width: 150px; } }
 @media screen and (max-width: 360px) {
-  .page-wrap {
-    margin: 0; }
-    .page-wrap header {
-      height: 450px; }
-      .page-wrap header h1 {
-        padding-top: 25%;
-        font-size: 35px; }
-      .page-wrap header p {
-        font-size: 11px; }
-      .page-wrap header .header-1 {
-        top: auto;
-        left: auto;
-        height: 65px;
-        width: 65px;
-        bottom: 50px;
-        right: 0px;
-        -webkit-transform: rotate(50deg);
-        -moz-transform: rotate(50deg);
-        -ms-transform: rotate(50deg);
-        -o-transform: rotate(50deg);
-        transform: rotate(50deg); }
-      .page-wrap header .header-2 {
-        height: 50px;
-        width: 50px; }
-      .page-wrap header .bg-container {
-        height: 150px;
-        width: 150px; }
-        .page-wrap header .bg-container .bg-img-mobile {
-          height: 150px;
-          width: 150px; } }
+  .page-wrap header {
+    height: 450px; }
+    .page-wrap header h1 {
+      padding-top: 25%;
+      font-size: 35px; }
+    .page-wrap header p {
+      font-size: 11px; }
+    .page-wrap header .header-1 {
+      top: auto;
+      left: auto;
+      height: 65px;
+      width: 65px;
+      bottom: 60px;
+      right: 0;
+      -webkit-transform: rotate(50deg);
+      -moz-transform: rotate(50deg);
+      -ms-transform: rotate(50deg);
+      -o-transform: rotate(50deg);
+      transform: rotate(50deg); }
+    .page-wrap header .header-2 {
+      height: 50px;
+      width: 50px; } }
 .profile {
   height: cover;
   margin: 0 -24px;
@@ -467,36 +468,6 @@ div.side-bar {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     box-orient: vertical;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    box-direction: normal;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-direction: column; }
-    .profile .container .avatar {
-      height: 130px;
-      width: 130px;
-      background-image: url(/assets/img/avatar.jpg);
-      background-size: cover;
-      -webkit-filter: grayscale(100%);
-      margin: 0 20px;
-      border-radius: 50%; }
-    .profile .container .blurb {
-      flex: 1;
-      margin: 0;
-      margin-right: 30px; }
-      .profile .container .blurb p {
-        text-align: justify;
-        margin: 5px 0; }
-
-@media screen and (max-width: 500px) {
-  .profile h1 {
-    font-size: 32px; }
-  .profile .container {
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
     -webkit-box-direction: reverse;
     -moz-box-direction: reverse;
     box-direction: reverse;
@@ -505,18 +476,36 @@ div.side-bar {
     flex-direction: column-reverse;
     -ms-flex-direction: column-reverse; }
     .profile .container .avatar {
-      height: 100px;
-      width: 100px;
-      margin: 0 auto; }
+      height: 130px;
+      width: 130px;
+      margin: 20px auto;
+      background-image: url(/assets/img/avatar.jpg);
+      background-size: cover;
+      -webkit-filter: grayscale(100%);
+      border-radius: 50%; }
     .profile .container .blurb {
-      margin: 0 10px;
-      margin-top: 20px; }
+      flex: 1;
+      margin: 0 30px; }
       .profile .container .blurb p {
-        text-align: center; }
+        text-align: center;
+        margin: 5px 0; }
+        .profile .container .blurb p b {
+          color: #603A1E; }
         .profile .container .blurb p a {
           color: #603A1E;
           font-weight: bold;
-          text-decoration: none; } }
+          text-decoration: none; }
+
+@media screen and (max-width: 500px) {
+  .profile h1 {
+    font-size: 32px; }
+  .profile .container .avatar {
+    height: 100px;
+    width: 100px; }
+  .profile .container .blurb {
+    margin: 0 10px; }
+    .profile .container .blurb p {
+      text-align: center; } }
 footer {
   height: 200px;
   background: #3C2415;
