@@ -11,31 +11,63 @@ footer
         width: 250px
         //border: solid black 1px
         margin: 20px auto 5px auto
-        
-        
+            
         [class^="social-"]
             display: inline-block
-            +size(35px)
-            //background: pink
+            +size(30px)
+            background-color: #8B5E3C
+            background-repeat: no-repeat
             margin-top: 10px
             border-radius: 50%
+            +transition(background-color .5s ease-out)
             
         .social-1
             background:
                 image: url(/assets/img/icons/facebook-icon.svg)
+                
         .social-2
             background:
                 image: url(/assets/img/icons/twitter-icon.svg)
+
         .social-3
             background:
                 image: url(/assets/img/icons/instagram-icon.svg)
+                
         .social-4
             background:
                 image: url(/assets/img/icons/devianart-icon.svg)
+                
         .social-5
             background:
                 image: url(/assets/img/icons/codeio-icon.svg)
         
+        a:hover
+            .social-1
+                background-color: #43619B
+            .social-2
+                background-color: #2EA6DE
+            .social-3
+                background-color: #2A5C83
+            .social-4
+                background-color: #05CC47
+            .social-5
+                background-color: black
+                
+        
     h4
         color: #fff
         margin-top: 0
+        
+@media screen and (max-width: 500px)
+    footer
+        .container-social
+            .social-1
+                background-color: #43619B
+            .social-2
+                background-color: #2EA6DE
+            .social-3
+                background-color: #2A5C83
+            .social-4
+                background-color: #05CC47
+            .social-5
+                background-color: black

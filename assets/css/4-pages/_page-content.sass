@@ -99,7 +99,7 @@
             background: #8B5E3C
             margin: 0 auto
 
-@media (max-width: 1200px)
+@media screen and (max-width: 1200px)
     .page-wrap
         header
             .header-2
@@ -113,7 +113,7 @@
             .header-4
                 +size(150px)
                 
-@media(max-width: 450px)
+@media screen and (max-width: 500px)
     .page-wrap
         margin: 0
         
@@ -121,20 +121,78 @@
             height: 450px
             
             h1
-                padding-top: 65%
-                font-size: 30px
+                padding-top: 25%
+                font-size: 35px
             
             p
                 font-size: 11px
             .header-1
-                display: none
+                top: auto
+                left: auto
+                +size(80px)
+                bottom: 50px
+                right: 15px
+                +transform(rotate(50deg))
+                    
             .header-2
-                display: none
+                +size(60px)
+                top: 35px
+                
             .header-3
                 display: none
+                
             .header-4
-                display: none
+                +size(60px)
+                left: 20px
+                bottom: 20px
+            
+            .bg-container
+                +size(200px)
+                background: #F7941E
+                margin: 5px auto 0 auto
+                padding: 5px
+                border-radius: 10%
+                
+                .bg-img-mobile
+                    +size(200px)
+                    background:
+                        image: url(/assets/img/coffe.svg)
+                        position: center
+                        repeat: no-repeat
+                    max-width: 100%
         
         .story-section
             display: none
+//@media screen and (max-width: 380px)
+@media screen and (max-width: 360px)
+    .page-wrap
+        margin: 0
+        
+        header
+            height: 450px
             
+            h1
+                padding-top: 25%
+                font-size: 35px
+            
+            p
+                font-size: 11px
+            .header-1
+                top: auto
+                left: auto
+                +size(65px)
+                bottom: 50px
+                right: 0px
+                +transform(rotate(50deg))
+            
+            .header-2
+                +size(50px)
+                    
+            .bg-container
+                +size(150px)
+                
+                .bg-img-mobile
+                    +size(150px)
+                    
+            
+                
