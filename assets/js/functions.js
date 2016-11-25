@@ -1,11 +1,11 @@
 $( document ).ready(function() {
 
-   var baloon = $('.baloon');
-   function runIt() {
-       baloon.animate({top:'+=20'}, 1000);
-       baloon.animate({top:'-=20'}, 1000, runIt);
+   var floatObject = $('.floating');
+   function floating() {
+       floatObject.animate({top:'+=20'}, 1000);
+       floatObject.animate({top:'-=20'}, 1000, floating);
    }
 
-   runIt();
+   floating();
 
 });

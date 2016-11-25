@@ -235,7 +235,7 @@ div.side-bar {
   background-color: #F7941E;
   position: fixed;
   z-index: 1; }
-  div.side-bar .baloon {
+  div.side-bar .floating {
     height: 350px;
     width: 350px;
     position: absolute;
@@ -243,16 +243,33 @@ div.side-bar {
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 40px;
+    bottom: 90px;
+    z-index: 1;
     max-width: 100%; }
-    div.side-bar .baloon .bg-img {
+    div.side-bar .floating .bg-img {
       height: 350px;
       width: 350px;
       background-image: url(/assets/img/coffe.svg);
       background-position: center;
       background-repeat: no-repeat;
       max-width: 100%; }
+  div.side-bar .shadow {
+    width: 300px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0px 150px 65px black;
+    opacity: 0.7;
+    position: absolute;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 190px;
+    max-width: 100%; }
 
+@media(max-width: 450px) {
+  div.side-bar {
+    background-color: #999;
+    display: none; } }
 .page-wrap {
   margin-left: 35%;
   padding: 12px 24px; }
@@ -282,7 +299,7 @@ div.side-bar {
       left: -10px;
       height: 200px;
       width: 200px;
-      background-image: url(/assets/img/header-1.svg);
+      background-image: url(/assets/img/doodles/header-1.svg);
       background-repeat: no-repeat;
       max-width: 100%; }
     .page-wrap header .header-2 {
@@ -291,7 +308,7 @@ div.side-bar {
       right: 30px;
       height: 200px;
       width: 200px;
-      background-image: url(/assets/img/header-2.svg);
+      background-image: url(/assets/img/doodles/header-2.svg);
       background-repeat: no-repeat;
       max-width: 100%; }
     .page-wrap header .header-3 {
@@ -300,7 +317,7 @@ div.side-bar {
       right: 60px;
       height: 200px;
       width: 200px;
-      background-image: url(/assets/img/header-3.svg);
+      background-image: url(/assets/img/doodles/header-3.svg);
       background-repeat: no-repeat;
       max-width: 100%; }
     .page-wrap header .header-4 {
@@ -309,7 +326,7 @@ div.side-bar {
       left: 80px;
       height: 200px;
       width: 200px;
-      background-image: url(/assets/img/header-4.svg);
+      background-image: url(/assets/img/doodles/header-4.svg);
       background-repeat: no-repeat;
       max-width: 100%; }
   .page-wrap .story-section {
@@ -348,6 +365,26 @@ div.side-bar {
   .page-wrap header .header-4 {
     height: 150px;
     width: 150px; } }
+@media(max-width: 450px) {
+  .page-wrap {
+    margin: 0; }
+    .page-wrap header {
+      height: 450px; }
+      .page-wrap header h1 {
+        padding-top: 65%;
+        font-size: 30px; }
+      .page-wrap header p {
+        font-size: 11px; }
+      .page-wrap header .header-1 {
+        display: none; }
+      .page-wrap header .header-2 {
+        display: none; }
+      .page-wrap header .header-3 {
+        display: none; }
+      .page-wrap header .header-4 {
+        display: none; }
+    .page-wrap .story-section {
+      display: none; } }
 .profile {
   height: cover;
   margin: 0 -24px;
@@ -389,12 +426,22 @@ footer {
     height: 50px;
     width: 250px;
     margin: 20px auto 5px auto; }
-    footer .container-social .social {
+    footer .container-social [class^="social-"] {
       display: inline-block;
-      height: 30px;
-      width: 30px;
-      background: #fff;
-      margin: 10px; }
+      height: 35px;
+      width: 35px;
+      margin-top: 10px;
+      border-radius: 50%; }
+    footer .container-social .social-1 {
+      background-image: url(/assets/img/icons/facebook-icon.svg); }
+    footer .container-social .social-2 {
+      background-image: url(/assets/img/icons/twitter-icon.svg); }
+    footer .container-social .social-3 {
+      background-image: url(/assets/img/icons/instagram-icon.svg); }
+    footer .container-social .social-4 {
+      background-image: url(/assets/img/icons/devianart-icon.svg); }
+    footer .container-social .social-5 {
+      background-image: url(/assets/img/icons/codeio-icon.svg); }
   footer h4 {
     color: #fff;
     margin-top: 0; }
