@@ -266,7 +266,7 @@ div.side-bar {
     bottom: 190px;
     max-width: 100%; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   div.side-bar {
     display: none; } }
 .page-wrap {
@@ -328,29 +328,31 @@ div.side-bar {
       background-image: url(/assets/img/doodles/header-4.svg);
       background-repeat: no-repeat;
       max-width: 100%; }
-  .page-wrap .story-section {
-    font-family: Open Sans; }
-    .page-wrap .story-section h1 {
-      font-size: 40px;
-      font-weight: 900;
-      font-family: Coming Soon;
-      color: #603A1E;
-      margin: 0;
-      margin-bottom: 30px; }
-    .page-wrap .story-section h2, .page-wrap .story-section h5 {
-      text-align: right;
-      margin: 0;
-      font-family: Coming Soon; }
-    .page-wrap .story-section p {
-      text-align: justify;
-      margin: 30px 0 50px 0;
-      text-indent: 50px; }
-    .page-wrap .story-section .blog-pic {
-      height: 100px;
-      width: 100px;
-      width: 500px;
-      background: #8B5E3C;
-      margin: 0 auto; }
+  .page-wrap .story-section h1 {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Coming Soon;
+    color: #603A1E;
+    margin: 0;
+    margin-bottom: 30px; }
+  .page-wrap .story-section h2, .page-wrap .story-section h5 {
+    text-align: right;
+    margin: 0;
+    font-family: Coming Soon; }
+  .page-wrap .story-section p {
+    text-align: justify;
+    margin: 30px 0 50px 0;
+    text-indent: 50px; }
+  .page-wrap .story-section .blog-pic {
+    height: 400px;
+    width: auto;
+    margin: 20px auto 0 auto; }
+    .page-wrap .story-section .blog-pic .pic {
+      background-image: url(/assets/img/blog-img/1000startup.gif);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 400px; }
 
 @media screen and (max-width: 1200px) {
   .page-wrap header .header-2 {
@@ -364,7 +366,7 @@ div.side-bar {
   .page-wrap header .header-4 {
     height: 150px;
     width: 150px; } }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .page-wrap {
     margin: auto; }
     .page-wrap header {
@@ -410,47 +412,25 @@ div.side-bar {
           background-image: url(/assets/img/coffe.svg);
           background-position: center;
           background-repeat: no-repeat;
-          max-width: 100%; }
-    .page-wrap .story-section {
-      display: none; } }
+          max-width: 100%; } }
 @media screen and (max-width: 380px) {
   .page-wrap header h1 {
     padding-top: 30%; }
+  .page-wrap header .header-1 {
+    right: 0; }
   .page-wrap header .bg-container {
     height: 150px;
     width: 150px; }
     .page-wrap header .bg-container .bg-img-mobile {
       height: 150px;
       width: 150px; } }
-@media screen and (max-width: 360px) {
-  .page-wrap header {
-    height: 450px; }
-    .page-wrap header h1 {
-      padding-top: 25%;
-      font-size: 35px; }
-    .page-wrap header p {
-      font-size: 11px; }
-    .page-wrap header .header-1 {
-      top: auto;
-      left: auto;
-      height: 65px;
-      width: 65px;
-      bottom: 60px;
-      right: 0;
-      -webkit-transform: rotate(50deg);
-      -moz-transform: rotate(50deg);
-      -ms-transform: rotate(50deg);
-      -o-transform: rotate(50deg);
-      transform: rotate(50deg); }
-    .page-wrap header .header-2 {
-      height: 50px;
-      width: 50px; } }
 .profile {
   height: cover;
   margin: 0 -24px;
   margin-bottom: 24px;
   padding: 24px;
-  padding-top: 0; }
+  padding-top: 0;
+  font-family: Coming Soon; }
   .profile h1 {
     font-size: 40px;
     font-weight: 900;
@@ -496,7 +476,7 @@ div.side-bar {
           font-weight: bold;
           text-decoration: none; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .profile h1 {
     font-size: 32px; }
   .profile .container .avatar {
@@ -516,7 +496,7 @@ footer {
   footer .container-social {
     height: 50px;
     width: 250px;
-    margin: 20px auto 5px auto; }
+    margin: 5px auto 5px auto; }
     footer .container-social [class^="social-"] {
       display: inline-block;
       height: 30px;
@@ -537,7 +517,7 @@ footer {
     footer .container-social .social-4 {
       background-image: url(/assets/img/icons/devianart-icon.svg); }
     footer .container-social .social-5 {
-      background-image: url(/assets/img/icons/codeio-icon.svg); }
+      background-image: url(/assets/img/icons/github-icon.svg); }
     footer .container-social a:hover .social-1 {
       background-color: #43619B; }
     footer .container-social a:hover .social-2 {
@@ -549,10 +529,11 @@ footer {
     footer .container-social a:hover .social-5 {
       background-color: black; }
   footer h4 {
+    font-family: Coming Soon;
     color: #fff;
-    margin-top: 0; }
+    margin: 20px 0 0 0; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   footer .container-social .social-1 {
     background-color: #43619B; }
   footer .container-social .social-2 {

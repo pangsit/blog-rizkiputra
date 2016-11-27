@@ -71,7 +71,7 @@
             
     .story-section
         //background: $silver
-        font-family: Open Sans
+        //font-family: Open Sans
             
         h1
             font:
@@ -94,10 +94,19 @@
             text-indent: 50px
             
         .blog-pic
-            +size(100px)
-            width: 500px
-            background: #8B5E3C
-            margin: 0 auto
+            height: 400px
+            width: auto
+            //background: #8B5E3C
+            margin: 20px auto 0 auto
+            
+            .pic
+                background:
+                    image: url(/assets/img/blog-img/1000startup.gif)
+                    position: center
+                    size: contain
+                    repeat: no-repeat
+                height: 400px
+            
 
 @media screen and (max-width: 1200px)
     .page-wrap
@@ -113,7 +122,7 @@
             .header-4
                 +size(150px)
                 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 750px)
     .page-wrap
         margin: auto
         
@@ -161,42 +170,23 @@
                         repeat: no-repeat
                     max-width: 100%
         
-        .story-section
-            display: none
+//        .story-section
+//            display: none
 
 @media screen and (max-width: 380px)
     .page-wrap
         header
             h1
                 padding-top: 30%
+            
+            .header-1
+                right: 0
                 
             .bg-container
                 +size(150px)
                 
                 .bg-img-mobile
                     +size(150px)
-            
-@media screen and (max-width: 360px)
-    .page-wrap
-        header
-            height: 450px
-            
-            h1
-                padding-top: 25%
-                font-size: 35px
-            
-            p
-                font-size: 11px
-            .header-1
-                top: auto
-                left: auto
-                +size(65px)
-                bottom: 60px
-                right: 0
-                +transform(rotate(50deg))
-            
-            .header-2
-                +size(50px)
                     
 
                     
