@@ -477,11 +477,13 @@ div.side-bar {
         text-align: center;
         margin: 5px 0; }
         .profile .container .blurb p b {
-          color: #603A1E; }
+          color: #8B5E3C; }
         .profile .container .blurb p a {
-          color: #603A1E;
+          color: #8B5E3C;
           font-weight: bold;
           text-decoration: none; }
+          .profile .container .blurb p a:hover {
+            color: #603A1E; }
 
 @media screen and (max-width: 750px) {
   .profile h1 {
