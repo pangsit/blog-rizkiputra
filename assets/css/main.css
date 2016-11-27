@@ -342,7 +342,14 @@ div.side-bar {
   .page-wrap .story-section p {
     text-align: justify;
     margin: 30px 0 50px 0;
-    text-indent: 50px; }
+    text-indent: 50px;
+    line-height: 150%; }
+    .page-wrap .story-section p a {
+      color: #8B5E3C;
+      font-weight: bold;
+      text-decoration: none; }
+      .page-wrap .story-section p a:hover {
+        color: #603A1E; }
   .page-wrap .story-section .blog-pic {
     height: 400px;
     width: auto;
