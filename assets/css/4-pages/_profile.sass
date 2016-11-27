@@ -1,0 +1,64 @@
+.profile
+    height: cover
+    margin: 0 -24px
+    margin-bottom: 24px
+    padding: 24px
+    padding-top: 0
+    font-family: Coming Soon
+    
+    h1
+        font:
+            size: 40px
+            weight: 900
+            family: Coming Soon
+        color: #603A1E
+        margin: 0
+        
+    .container
+        +display(flex)
+        +flex-direction(column-reverse)
+            
+        .avatar
+            +size(130px)
+            margin: 20px auto
+            background:
+                image: url(/assets/img/avatar.jpg)
+                size: cover
+            -webkit-filter: grayscale(100%)
+            border-radius: 50%
+
+        .blurb
+            flex: 1
+            margin: 0 30px
+            
+            
+            p
+                text-align: center
+                margin: 5px 0
+                
+                b
+                    color: #8B5E3C
+                
+                a
+                    color: #8B5E3C
+                    font-weight: bold
+                    text-decoration: none
+                    
+                    &:hover
+                        color: #603A1E                    
+                
+@media screen and (max-width: 750px)
+    .profile
+        h1
+            font-size: 32px
+        .container
+            .avatar
+                +size(100px)
+                
+            .blurb
+                margin: 0 10px
+                
+                p
+                    text-align: center
+
+                        
